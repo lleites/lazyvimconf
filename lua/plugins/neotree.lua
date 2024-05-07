@@ -13,6 +13,10 @@ return {
         "neotest-output-panel",
       },
       filesystem = {
+        filtered_items = {
+          visible = false, -- when true, they will just be displayed differently than normal items
+          hide_dotfiles = false,
+        },
         bind_to_cwd = true,
         follow_current_file = { enabled = true },
         use_libuv_file_watcher = true,
